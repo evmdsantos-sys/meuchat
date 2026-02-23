@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
     <meta charset="UTF-8">
     
     <title>Teste de Chat Salesforce - GroupHive</title>
@@ -34,26 +34,26 @@
         <p>O chat de Atendimento Comercial deve aparecer em breve.</p>
         <small>Se não carregar, verifique o Console (F12).</small>
     </div>
+<script type='text/javascript'>
+	function initEmbeddedMessaging() {
+		try {
+			embeddedservice_bootstrap.settings.language = 'pt_BR'; // For example, enter 'en' or 'en-US'
 
-    <script type='text/javascript'>
-        function initEmbeddedMessaging() {
-            try {
-                embeddedservice_bootstrap.settings.language = 'pt_BR';
-
-                embeddedservice_bootstrap.init(
-                    '00D89000004QrhV',
-                    'Atendimento_Comercial_BR',
-                    'https://grouphive--qa.sandbox.my.site.com/ESWAtendimentoComercial1768914858036',
-                    {
-                        scrt2URL: 'https://grouphive--qa.sandbox.my.salesforce-scrt.com'
-                    }
-                );
-            } catch (err) {
-                console.error('Error loading Embedded Messaging: ', err);
-            }
-        };
-    </script>
-    <script type='text/javascript' src='https://grouphive--qa.sandbox.my.site.com/ESWAtendimentoComercial1768914858036/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
+			embeddedservice_bootstrap.init(
+				'00D89000004QrhV',
+				'MTEv',
+				'https://grouphive--qa.sandbox.my.site.com/ESWMTEv1771860960499',
+				{
+					scrt2URL: 'https://grouphive--qa.sandbox.my.salesforce-scrt.com'
+				}
+			);
+		} catch (err) {
+			console.error('Error loading Embedded Messaging: ', err);
+		}
+	};
+</script>
+<script type='text/javascript' src='https://grouphive--qa.sandbox.my.site.com/ESWMTEv1771860960499/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
 
 </body>
 </html>
+
