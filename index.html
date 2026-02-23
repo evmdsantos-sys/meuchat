@@ -38,19 +38,29 @@
 <script type='text/javascript'>
 	function initEmbeddedMessaging() {
 		try {
-			embeddedservice_bootstrap.settings.language = 'pt_BR'; // For example, enter 'en' or 'en-US'
+			embeddedservice_bootstrap.settings.language = 'pt_BR';
+
+			// PASSO DO VÍDEO: Configurar os campos ANTES do init [00:02:41]
+			embeddedservice_bootstrap.prechatAPI.setVisiblePrechatFields({
+				// O nome aqui deve ser o "Channel Variable Name" do seu Salesforce [00:02:07]
+				'FirstName': {
+					value: 'Everson',
+					isEditableByEndUser: true
+				},
+				'Telefone': {
+					value: '11999999999',
+					isEditableByEndUser: true
+				}
+			});
 
 			embeddedservice_bootstrap.init(
 				'00Dbe000002ewfO',
 				'TestEv',
 				'https://grouphive--multiset.sandbox.my.site.com/ESWTestEv1771863701668',
-{
-    scrt2URL: 'https://grouphive--multiset.sandbox.my.salesforce-scrt.com',
-    prechatFormValues: {
-        'Telefone': '11999999999'
-    }
-} // <-- Esta chave fecha o objeto de configuração (scrt2URL + prechatFormValues)
-);
+				{
+					scrt2URL: 'https://grouphive--multiset.sandbox.my.salesforce-scrt.com'
+				}
+			);
 		} catch (err) {
 			console.error('Error loading Embedded Messaging: ', err);
 		}
@@ -61,6 +71,7 @@
 
 </body>
 </html>
+
 
 
 
