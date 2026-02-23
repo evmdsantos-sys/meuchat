@@ -41,30 +41,26 @@
             embeddedservice_bootstrap.settings.language = 'pt_BR';
 
             // Aguarda o chat estar pronto para injetar os valores
-            window.addEventListener("onEmbeddedMessagingReady", () => {
-                embeddedservice_bootstrap.prechatAPI.setVisiblePrechatFields({
-                    '_FirstName': {
-                        value: 'Everson',
-                        isEditableByEndUser: true
-                    },
-                    '_LastName': {
-                        value: 'Santos',
-                        isEditableByEndUser: true
-                    },
-                    '_Email': {
-                        value: 'everson@exemplo.com',
-                        isEditableByEndUser: true
-                    },
-                    '_Subject': {
-                        value: 'Suporte Técnico',
-                        isEditableByEndUser: true
-                    },
-                    'Telefone': {
-                        value: '11999999999',
-                        isEditableByEndUser: true
-                    }
-                });
-            });
+window.addEventListener("onEmbeddedMessagingReady", e => {
+    embeddedservice_bootstrap.prechatAPI.setVisiblePrechatFields({
+        "_firstName": {
+            "value": "Test",
+            "isEditableByEndUser": false
+        },
+        "_lastName": {
+            "value": "User",
+            "isEditableByEndUser": false
+        },
+        "_email": {
+            "value": "test.user@test.com",
+            "isEditableByEndUser": false
+        },
+        "_subject": {
+            "value": "Testing",
+            "isEditableByEndUser": true
+        }
+    });
+});
 
             embeddedservice_bootstrap.init(
                 '00Dbe000002ewfO',
@@ -84,6 +80,7 @@
 
 </body>
 </html>
+
 
 
 
