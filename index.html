@@ -1,18 +1,18 @@
 <script type='text/javascript'>
 	function initEmbeddedMessaging() {
 		try {
-			embeddedservice_bootstrap.settings.language = 'pt_BR'; // For example, enter 'en' or 'en-US'
+			embeddedservice_bootstrap.settings.language = 'pt_BR';
 
 			embeddedservice_bootstrap.init(
 				'00Dbe000002ewfO',
 				'TestEv',
 				'https://grouphive--multiset.sandbox.my.site.com/ESWTestEv1771863701668',
 				{
-				scrt2URL: 'https://grouphive--multiset.sandbox.my.salesforce-scrt.com',
-        // Este é o formato correto para preencher campos no Messaging for Web
-        prechatFormValues: {
-            'Telefone': 'Everson'
-				}}
+					scrt2URL: 'https://grouphive--multiset.sandbox.my.salesforce-scrt.com',
+					prechatFormValues: {
+						'Telefone': '11999999999'
+					}
+				}
 			);
 		} catch (err) {
 			console.error('Error loading Embedded Messaging: ', err);
@@ -20,5 +20,3 @@
 	};
 </script>
 <script type='text/javascript' src='https://grouphive--multiset.sandbox.my.site.com/ESWTestEv1771863701668/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
-
-
