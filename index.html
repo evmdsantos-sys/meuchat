@@ -43,8 +43,12 @@
 			// PASSO DO VÍDEO: Configurar os campos ANTES do init [00:02:41]
 			embeddedservice_bootstrap.prechatAPI.setVisiblePrechatFields({
 				// O nome aqui deve ser o "Channel Variable Name" do seu Salesforce [00:02:07]
-				'FirstName': {
+				'_FirstName': {
 					value: 'Everson',
+					isEditableByEndUser: true
+				},
+								'_LastName': {
+					value: 'Mendes',
 					isEditableByEndUser: true
 				},
 				'Telefone': {
@@ -71,6 +75,7 @@
 
 </body>
 </html>
+
 
 
 
