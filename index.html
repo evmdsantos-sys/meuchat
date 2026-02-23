@@ -45,12 +45,12 @@
 				'TestEv',
 				'https://grouphive--multiset.sandbox.my.site.com/ESWTestEv1771863701668',
 {
-					scrt2URL: 'https://grouphive--multiset.sandbox.my.salesforce-scrt.com',
-					prechatFormValues: {
-						'Telefone': '11999999999'
-					}
-}		
-			);
+    scrt2URL: 'https://grouphive--multiset.sandbox.my.salesforce-scrt.com',
+    prechatFormValues: {
+        'Telefone': '11999999999'
+    }
+} // <-- Esta chave fecha o objeto de configuração (scrt2URL + prechatFormValues)
+);
 		} catch (err) {
 			console.error('Error loading Embedded Messaging: ', err);
 		}
@@ -61,5 +61,6 @@
 
 </body>
 </html>
+
 
 
