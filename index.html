@@ -62,24 +62,25 @@ window.addEventListener("onEmbeddedMessagingReady", e => {
     });
 });
 
-            embeddedservice_bootstrap.init(
-                '00Dbe000002ewfO',
-                'TestEv',
-                'https://grouphive--multiset.sandbox.my.site.com/ESWTestEv1771863701668',
-                {
-                    scrt2URL: 'https://grouphive--multiset.sandbox.my.salesforce-scrt.com'
-                }
+			embeddedservice_bootstrap.init(
+				'00D89000004QrhV',
+				'MTEv',
+				'https://grouphive--qa.sandbox.my.site.com/ESWMTEv1771860960499',
+				{
+					scrt2URL: 'https://grouphive--qa.sandbox.my.salesforce-scrt.com'
+				}
             );
         } catch (err) {
             console.error('Error loading Embedded Messaging: ', err);
         }
     };
 </script>
-<script type='text/javascript' src='https://grouphive--multiset.sandbox.my.site.com/ESWTestEv1771863701668/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
+<script type='text/javascript' src='https://grouphive--qa.sandbox.my.site.com/ESWMTEv1771860960499/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
 
 
 </body>
 </html>
+
 
 
 
