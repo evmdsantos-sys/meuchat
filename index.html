@@ -36,9 +36,9 @@
     </div>
 
 <script type='text/javascript'>
-    function initEmbeddedMessaging() {
-        try {
-            embeddedservice_bootstrap.settings.language = 'pt_BR';
+	function initEmbeddedMessaging() {
+		try {
+			embeddedservice_bootstrap.settings.language = 'pt_BR'; // For example, enter 'en' or 'en-US'
 
             // Aguarda o chat estar pronto para injetar os valores
 window.addEventListener("onEmbeddedMessagingReady", e => {
@@ -63,23 +63,22 @@ window.addEventListener("onEmbeddedMessagingReady", e => {
 });
 
 			embeddedservice_bootstrap.init(
-				'00D89000004QrhV',
-				'MTEv',
-				'https://grouphive--qa.sandbox.my.site.com/ESWMTEv1771860960499',
+				'00DDn00000DsdZF',
+				'Atendimento_Suporte_BR_Logado',
+				'https://grouphive.my.site.com/ESWAtendimentoSuporteBR1771020268970',
 				{
-					scrt2URL: 'https://grouphive--qa.sandbox.my.salesforce-scrt.com'
+					scrt2URL: 'https://grouphive.my.salesforce-scrt.com'
 				}
-            );
-        } catch (err) {
-            console.error('Error loading Embedded Messaging: ', err);
-        }
-    };
+			);
+		} catch (err) {
+			console.error('Error loading Embedded Messaging: ', err);
+		}
+	};
 </script>
-<script type='text/javascript' src='https://grouphive--qa.sandbox.my.site.com/ESWMTEv1771860960499/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
+<script type='text/javascript' src='https://grouphive.my.site.com/ESWAtendimentoSuporteBR1771020268970/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
 
-
-</body>
 </html>
+
 
 
 
